@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Entrar</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <main class="card">
+    <h1>Entrar</h1>
+    <p id="status" class="status">Verificando a sessão…</p>
+
+    <div id="login-area" hidden>
+      <p>Escolha como você quer entrar:</p>
+      <a class="btn" href="/oauth/login/google">Entrar com Google</a>
+      <a class="btn" href="/oauth/login/github">Entrar com GitHub</a>
+    </div>
+
+    <div id="logout-area" hidden>
+      <form method="post" action="/oauth/logout">
+        <button class="btn" type="submit">Sair</button>
+      </form>
+    </div>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>
